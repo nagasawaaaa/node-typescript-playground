@@ -1,0 +1,28 @@
+{
+  "name": "node-typescript-playground",
+  "version": "0.1.0",
+  "description": "ローカルでちょっとしたtsを書きたいときのリポジトリ",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc",
+    "start": "node ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.5.1"
+  }
+}
